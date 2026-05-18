@@ -10,7 +10,7 @@ import {
   type LoginRequest,
   type User,
 } from "../services/authService";
-import axiosInstance, { axioss } from "@/api/axiosInstance";
+import axiosInstance from "@/api/axiosInstance";
 
 interface AuthContextType {
   user: User | null;

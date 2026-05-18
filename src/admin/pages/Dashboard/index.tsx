@@ -27,6 +27,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setRecentOrders([]);
     const fetchDashboard = async () => {
       setLoading(true);
       try {

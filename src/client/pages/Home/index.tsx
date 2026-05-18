@@ -20,6 +20,8 @@ const Home = () => {
 
   // Fetch categories
   useEffect(() => {
+    if (loading) {
+    }
     const fetchCategories = async () => {
       try {
         const res = await axioss.get("categories", {
