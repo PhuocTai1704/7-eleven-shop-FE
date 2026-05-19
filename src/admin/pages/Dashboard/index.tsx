@@ -119,7 +119,7 @@ const Dashboard = () => {
         </div>
 
         {/* Stat Cards */}
-        {loading ? (
+        {/* {loading ? (
           <div className="text-center py-10 text-gray-400">⏳ Đang tải...</div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -138,10 +138,10 @@ const Dashboard = () => {
               </div>
             ))}
           </div>
-        )}
+        )} */}
 
         {/* Quick Links */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           {[
             { label: "Quản lý sản phẩm", icon: "📦", path: "/admin/products" },
             {
@@ -163,10 +163,10 @@ const Dashboard = () => {
               </span>
             </a>
           ))}
-        </div>
+        </div> */}
 
         {/* Recent Orders */}
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+        {/* <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
           <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
             <h2 className="font-semibold text-gray-800">Đơn hàng gần đây</h2>
             <a
@@ -223,7 +223,7 @@ const Dashboard = () => {
               </tbody>
             </table>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );
