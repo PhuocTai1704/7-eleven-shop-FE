@@ -45,12 +45,12 @@ const AdminLayout = () => {
             Đơn hàng
           </Link>
 
-          <Link
+          {/* <Link
             to="/admin/users"
             className="px-4 py-3 rounded-xl hover:bg-[#007350] hover:text-white transition"
           >
             Người dùng
-          </Link>
+          </Link> */}
         </nav>
       </aside>
 

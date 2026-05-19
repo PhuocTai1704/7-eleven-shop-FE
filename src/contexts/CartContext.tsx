@@ -26,21 +26,12 @@ const CartContext = createContext<CartContextType | null>(null);
 
 export function CartProvider({ children }: { children: ReactNode }) {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
-  const { isAuthenticated } = useAuth();
 
   // Load giỏ hàng từ localStorage khi mount
   useEffect(() => {
     const saved = cartService.getCart();
     setCartItems(saved);
   }, []);
-
-  // Xóa giỏ hàng khi user logout
-  useEffect(() => {
-    if (!isAuthenticated) {
-      setCartItems([]);
-      cartService.clearCart();
-    }
-  }, [isAuthenticated]);
 
   // Đồng bộ state xuống localStorage mỗi khi cartItems thay đổi
   useEffect(() => {

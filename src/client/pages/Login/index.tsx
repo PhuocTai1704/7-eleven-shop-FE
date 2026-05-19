@@ -17,7 +17,7 @@ export default function LoginPage() {
     setLoading(true);
     try {
       await login({ username, password });
-      navigate(-1);
+      navigate("/");
     } catch (err: any) {
       setError(
         err?.response?.data?.message ||
