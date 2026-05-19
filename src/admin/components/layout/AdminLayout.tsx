@@ -60,7 +60,7 @@ const AdminLayout = () => {
         <header className="bg-[#007350] text-white px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="bg-white text-[#007350] font-black text-lg px-2 py-1 rounded">
-              7-ELEVEn
+              7-ELEVEN
             </div>
             <span className="text-green-200 text-sm">Admin Dashboard</span>
           </div>

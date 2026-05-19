@@ -30,7 +30,7 @@ const Login = () => {
         {/* Logo */}
         <div className="flex justify-center mb-6">
           <div className="bg-[#007350] text-white font-black text-2xl px-4 py-2 rounded-xl">
-            7-ELEVEn
+            7-ELEVEN
           </div>
         </div>
 

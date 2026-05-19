@@ -5,6 +5,7 @@ import NotFound from "@/admin/pages/NotFound";
 import { AdminRoute } from "@/components/RouteGuards";
 import AdminLayout from "@/admin/components/layout/AdminLayout";
 import ProductsPage from "@/admin/pages/Product";
+import OrdersPage from "@/admin/pages/Order";
 
 const AdminRouter = () => {
   return (
@@ -20,6 +21,7 @@ const AdminRouter = () => {
       >
         <Route index element={<Dashboard />} />
         <Route path="products" element={<ProductsPage />} />
+        <Route path="orders" element={<OrdersPage />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />
