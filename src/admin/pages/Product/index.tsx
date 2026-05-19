@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 import ProductModal, { type ProductForm } from "./ProductModal";
 import DeleteConfirm from "./DeleteConfirm";
-import ProductStats from "./ProductStats";
+// import ProductStats from "./ProductStats";
 import ProductToolbar from "./ProductToolbar";
 import ProductTable from "./ProductTable";
 import ProductDetailModal from "./ProductDetailModal";
@@ -237,11 +237,11 @@ export default function ProductsPage() {
 
   return (
     <>
-      <ProductStats
+      {/* <ProductStats
         total={totalElements}
         active={activeCount}
         outStock={outStockCount}
-      />
+      /> */}
 
       <ProductToolbar
         search={search}
