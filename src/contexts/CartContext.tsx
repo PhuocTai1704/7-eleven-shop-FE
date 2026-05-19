@@ -10,7 +10,6 @@ import {
   type ReactNode,
 } from "react";
 import { cartService, type CartItem } from "../services/cartService";
-import { useAuth } from "./AuthContext";
 
 interface CartContextType {
   cartItems: CartItem[];

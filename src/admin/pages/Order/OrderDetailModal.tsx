@@ -91,7 +91,7 @@ export default function OrderDetailModal({
                 <div key={idx} className="flex items-center gap-3">
                   {item.product.image ? (
                     <img
-                      src={item.product.image}
+                      src={`${import.meta.env.VITE_IMAGE_URL}${item.product.image}`}
                       alt={item.product.productName}
                       className="w-10 h-10 rounded-lg object-cover flex-shrink-0"
                     />
