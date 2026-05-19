@@ -3,7 +3,7 @@ import {
   fmtDate,
   NEXT_STATUS,
   STATUS_LABEL,
-} from "@/admin/constants/order.constants";
+} from "@/admin/constants/Order.constants";
 import type { Order, OrderStatus } from "@/types/product.types";
 import OrderStatusBadge from "./OrderStatusBadge";
 

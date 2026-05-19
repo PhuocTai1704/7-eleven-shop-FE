@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import type { Category, Product } from "@/types/product.types";
-import Header from "@/client/components/layout/Header";
 import { useRef } from "react";
 import ProductCard from "@/client/components/ProductCard";
 import { axioss } from "@/api/axiosInstance";
@@ -97,14 +96,6 @@ const Home = () => {
   };
   return (
     <div className="small-h-screen bg-gray-50">
-      {/* Header */}
-      <Header
-        search={search}
-        onSearch={setSearch}
-        isLoggedIn={false}
-        onLogin={() => console.log("login")}
-        onLogout={() => console.log("logout")}
-      />
       {/* Banner */}
       <div className="bg-gradient-to-r from-[#007350] to-[#00a36c] text-white">
         <div className="max-w-6xl mx-auto px-4 py-8">

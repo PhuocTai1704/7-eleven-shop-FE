@@ -1,4 +1,8 @@
 @import "tailwindcss";
+.auth-input {
+  @apply w-full px-3 py-2.5 border border-gray-200 rounded-xl text-sm
+         placeholder-gray-300 focus:outline-none focus:border-[#007350] transition;
+}
 
 .scrollbar-hide {
   -ms-overflow-style: none;

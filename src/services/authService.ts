@@ -61,6 +61,6 @@ export const authService = {
 
   isAdmin: (): boolean => {
     const user = authService.getUser();
-    return user?.roles.some((r) => r.roleName === "admin") ?? false;
+    return user?.roles.some((r) => r.roleId === 101) ?? false;
   },
 };

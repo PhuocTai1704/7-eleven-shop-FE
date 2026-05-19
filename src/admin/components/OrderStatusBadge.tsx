@@ -1,4 +1,4 @@
-import { STATUS_LABEL, STATUS_STYLE } from "@/admin/constants/order.constants";
+import { STATUS_LABEL, STATUS_STYLE } from "@/admin/constants/Order.constants";
 import type { OrderStatus } from "@/types/product.types";
 
 export default function OrderStatusBadge({ status }: { status: OrderStatus }) {

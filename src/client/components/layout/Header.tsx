@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 interface HeaderProps {
   onSearch: (value: string) => void;
   search: string;
@@ -13,10 +15,14 @@ const Header = ({
   onLogin,
   onLogout,
 }: HeaderProps) => {
+  const navigate = useNavigate();
   return (
     <header className="bg-[#007350] text-white sticky top-0 z-50 shadow-md">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4">
-        <div className="bg-white text-[#007350] font-black text-lg px-2 py-1 rounded flex-shrink-0">
+        <div
+          onClick={() => navigate("/")}
+          className="bg-white text-[#007350] font-black text-lg px-2 py-1 rounded flex-shrink-0 cursor-pointer"
+        >
           7-ELEVEN
         </div>
 
@@ -36,7 +42,10 @@ const Header = ({
         </div>
 
         <div className="flex items-center gap-3 flex-shrink-0 text-sm">
-          <button className="flex items-center gap-1 hover:text-green-200 transition">
+          <button
+            onClick={() => navigate("/cart")}
+            className="flex items-center gap-1 hover:text-green-200 transition"
+          >
             🛒 Giỏ hàng
           </button>
 

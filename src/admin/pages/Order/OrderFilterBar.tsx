@@ -1,4 +1,4 @@
-import { STATUS_LIST } from "@/admin/constants/order.constants";
+import { STATUS_LIST } from "@/admin/constants/Order.constants";
 import type { OrderStatus } from "@/types/product.types";
 
 interface OrderFilterBarProps {

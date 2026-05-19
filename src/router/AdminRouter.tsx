@@ -21,10 +21,9 @@ const AdminRouter = () => {
       >
         <Route index element={<Dashboard />} />
         <Route path="products" element={<ProductsPage />} />
-        <Route path="orders" element={<OrdersPage />} />
+        <Route path="orders" element={<OrdersPage />} />{" "}
+        <Route path="*" element={<NotFound />} />
       </Route>
-
-      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
